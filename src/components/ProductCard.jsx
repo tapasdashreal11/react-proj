@@ -6,7 +6,11 @@ const ProductCard = ({ name, id, price, handler, imgSrc }) => {
       <img src={imgSrc} alt={name} />
       <p>{name}</p>
       <h4>${price}</h4>
-      <button onClick={() => handler}>Add to Cart</button>
+      <button
+        onClick={() => handler({ name, id, price, handler, imgSrc, qty: 1 })}
+      >
+        Add to Cart
+      </button>
     </div>
   );
 };
