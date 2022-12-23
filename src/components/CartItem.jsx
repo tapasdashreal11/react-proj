@@ -11,6 +11,7 @@ const CartItem = ({
   deleteHandler,
   id,
 }) => {
+  console.log({ qty });
   return (
     <div className="cartItem">
       <img src={imgSrc} alt={name} />
